@@ -1,2 +1,25 @@
 # AI-RockPaperScissors
-Offline AI Rock-Paper-Scissors game with webcam hand detection using MediaPipe. Persian UI. Zero-install for Windows.
+
+بازی سنگ، کاغذ، قیچی با تشخیص دست از طریق وب‌کم — کاملاً آفلاین
+
+## ویژگی‌ها
+- تشخیص ۲۱ نقطه دست با MediaPipe Hand Landmarker
+- تشخیص سنگ / کاغذ / قیچی
+- شمارش ۳-۲-۱ و امتیازدهی
+- رابط کاربری فارسی و راست‌چین
+- بدون نیاز به نصب Python یا Node.js
+- قابل اجرا از روی فلش USB روی ویندوز ۱۰/۱۱
+
+## اجرا
+1. فایل ZIP کامل را از Google Drive دانلود کنید (شامل مدل‌ها و runtime)
+2. روی `start.bat` دوبار کلیک کنید
+3. اجازه دسترسی به دوربین را بدهید
+
+## منبع
+- MediaPipe (Apache 2.0) — https://github.com/google-ai-edge/mediapipe
+- فونت وزیرمتن (SIL OFL)
+
+## لایسنس
+نگاه کنید به LICENSE.txt
+
+**توجه:** برای نسخه کامل آفلاین (با مدل و Python portable) از فایل ZIP استفاده کنید. این ریپو شامل کد اصلی و ساختار است.

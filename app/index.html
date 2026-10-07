@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سنگ، کاغذ، قیچی با هوش مصنوعی</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✊ ✋ ✌️ سنگ کاغذ قیچی</h1>
+      <p class="subtitle">بازی با تشخیص دست از طریق وب‌کم</p>
+    </header>
+
+    <div id="help-panel" class="help-panel">
+      <h2>راهنمای کوتاه</h2>
+      <ol>
+        <li>دست خود را در مقابل دوربین بگیرید.</li>
+        <li>روی دکمه «شروع دور» کلیک کنید و تا شمارش ۳-۲-۱ حرکت نکنید.</li>
+        <li>در پایان شمارش، سنگ (مشت)، کاغذ (کف دست باز) یا قیچی (دو انگشت) نشان دهید.</li>
+      </ol>
+      <button id="close-help" class="btn secondary">متوجه شدم</button>
+    </div>
+
+    <div class="main-area">
+      <div class="video-wrapper">
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="output"></canvas>
+        <div id="camera-status" class="status-overlay">در حال آماده‌سازی دوربین...</div>
+      </div>
+
+      <div class="game-panel">
+        <div class="scores">
+          <div class="score-box">
+            <span class="label">شما</span>
+            <span id="player-score" class="score">۰</span>
+          </div>
+          <div class="score-box">
+            <span class="label">کامپیوتر</span>
+            <span id="computer-score" class="score">۰</span>
+          </div>
+        </div>
+
+        <div id="countdown" class="countdown hidden">۳</div>
+        <div id="result-msg" class="result-msg"></div>
+
+        <div class="moves">
+          <div class="move-card">
+            <span class="move-label">حرکت شما</span>
+            <span id="player-move" class="move-emoji">—</span>
+          </div>
+          <div class="move-card">
+            <span class="move-label">حرکت کامپیوتر</span>
+            <span id="computer-move" class="move-emoji">—</span>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="start-btn" class="btn primary" disabled>شروع دور</button>
+          <button id="reset-btn" class="btn secondary">بازنشانی امتیاز</button>
+          <button id="help-btn" class="btn secondary">راهنما</button>
+        </div>
+
+        <p id="gesture-hint" class="hint">دست خود را نشان دهید...</p>
+      </div>
+    </div>
+
+    <footer>
+      <p>کاملاً آفلاین • MediaPipe • برای استفاده آموزشی</p>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

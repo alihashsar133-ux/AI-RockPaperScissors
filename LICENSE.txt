@@ -1,0 +1,18 @@
+AI-RockPaperScissors
+This project is provided for educational use.
+
+Third-party components:
+
+1. MediaPipe (Hand Landmarker model and Tasks Vision)
+   Copyright Google LLC
+   Licensed under the Apache License, Version 2.0
+   https://github.com/google-ai-edge/mediapipe
+   https://www.apache.org/licenses/LICENSE-2.0
+
+2. Vazirmatn Font
+   Copyright (c) 2015 present Saber Rastikerdar
+   SIL Open Font License 1.1
+   https://github.com/rastikerdar/vazirmatn
+
+The game logic, UI, and packaging of this distribution are original work
+and may be used freely for non-commercial educational purposes.
