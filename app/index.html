@@ -1,75 +1,254 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سنگ، کاغذ، قیچی با هوش مصنوعی</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Sands of the Citadel — Hold the Gate</title>
+  <meta name="description" content="Defend your historic desert citadel from the siege. A fast, tactile arcade defense game." />
+  <meta name="theme-color" content="#0f172a" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Inter:wght@500;700;900&family=Amiri:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>✊ ✋ ✌️ سنگ کاغذ قیچی</h1>
-      <p class="subtitle">بازی با تشخیص دست از طریق وب‌کم</p>
-    </header>
-
-    <div id="help-panel" class="help-panel">
-      <h2>راهنمای کوتاه</h2>
-      <ol>
-        <li>دست خود را در مقابل دوربین بگیرید.</li>
-        <li>روی دکمه «شروع دور» کلیک کنید و تا شمارش ۳-۲-۱ حرکت نکنید.</li>
-        <li>در پایان شمارش، سنگ (مشت)، کاغذ (کف دست باز) یا قیچی (دو انگشت) نشان دهید.</li>
-      </ol>
-      <button id="close-help" class="btn secondary">متوجه شدم</button>
-    </div>
-
-    <div class="main-area">
-      <div class="video-wrapper">
-        <video id="webcam" autoplay playsinline muted></video>
-        <canvas id="output"></canvas>
-        <div id="camera-status" class="status-overlay">در حال آماده‌سازی دوربین...</div>
-      </div>
-
-      <div class="game-panel">
-        <div class="scores">
-          <div class="score-box">
-            <span class="label">شما</span>
-            <span id="player-score" class="score">۰</span>
-          </div>
-          <div class="score-box">
-            <span class="label">کامپیوتر</span>
-            <span id="computer-score" class="score">۰</span>
-          </div>
-        </div>
-
-        <div id="countdown" class="countdown hidden">۳</div>
-        <div id="result-msg" class="result-msg"></div>
-
-        <div class="moves">
-          <div class="move-card">
-            <span class="move-label">حرکت شما</span>
-            <span id="player-move" class="move-emoji">—</span>
-          </div>
-          <div class="move-card">
-            <span class="move-label">حرکت کامپیوتر</span>
-            <span id="computer-move" class="move-emoji">—</span>
-          </div>
-        </div>
-
-        <div class="buttons">
-          <button id="start-btn" class="btn primary" disabled>شروع دور</button>
-          <button id="reset-btn" class="btn secondary">بازنشانی امتیاز</button>
-          <button id="help-btn" class="btn secondary">راهنما</button>
-        </div>
-
-        <p id="gesture-hint" class="hint">دست خود را نشان دهید...</p>
-      </div>
-    </div>
-
-    <footer>
-      <p>کاملاً آفلاین • MediaPipe • برای استفاده آموزشی</p>
-    </footer>
+  <!-- Ambient background -->
+  <div class="bg-wrap" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-pattern"></div>
+    <div class="bg-vignette"></div>
   </div>
+
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">◈</span>
+      <div class="brand-text">
+        <strong>SANDS OF THE CITADEL</strong>
+        <span>Hold the Gate — Historical Defense</span>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <button id="btnHow" class="ghost-btn">How to Play</button>
+      <button id="btnScoresTop" class="ghost-btn">Legends</button>
+      <button id="btnSound" class="icon-btn" aria-label="Toggle sound">🔊</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <!-- Game frame -->
+    <div class="game-frame" id="gameFrame">
+      <canvas id="gameCanvas" width="1280" height="720" aria-label="Game canvas"></canvas>
+
+      <!-- HUD -->
+      <div class="hud">
+        <div class="hud-left">
+          <div class="stat pill">
+            <span class="k">SCORE</span>
+            <b id="hudScore">0</b>
+          </div>
+          <div class="stat pill">
+            <span class="k">WAVE</span>
+            <b id="hudWave">1</b>
+          </div>
+          <div class="stat pill combo-pill" id="comboPill">
+            <span class="k">COMBO</span>
+            <b id="hudCombo">×1.0</b>
+          </div>
+        </div>
+        <div class="hud-center">
+          <div class="gate-health">
+            <div class="gate-label">
+              <span>GATE INTEGRITY</span>
+              <small id="hudHealthText">100%</small>
+            </div>
+            <div class="health-track">
+              <div class="health-fill" id="healthFill" style="width:100%"></div>
+              <div class="health-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hud-right">
+          <div class="stat pill subtle">
+            <span class="k">BEST</span>
+            <b id="hudBest">0</b>
+          </div>
+          <button id="btnPause" class="pause-btn" aria-label="Pause">⏸︎</button>
+        </div>
+      </div>
+
+      <!-- Touch controls hint -->
+      <div class="touch-hint" id="touchHint">DRAG to aim • TAP right side to fire • SWIPE left side to move</div>
+
+      <!-- On-screen touch pads (shown on touch) -->
+      <div class="touch-controls" id="touchControls">
+        <div class="touch-pad left-pad" id="movePad">
+          <div class="pad-label">MOVE</div>
+          <div class="pad-stick" id="moveStick"></div>
+          <div class="pad-arrows">
+            <button data-mv="up">▲</button>
+            <div class="row"><button data-mv="left">◀</button><button data-mv="right">▶</button></div>
+            <button data-mv="down">▼</button>
+          </div>
+        </div>
+        <div class="touch-pad right-pad" id="firePad">
+          <div class="pad-label">AIM & FIRE</div>
+          <button id="fireBtn" class="fire-btn">⟢ FIRE</button>
+          <div class="pad-sub">Hold or tap</div>
+        </div>
+      </div>
+
+      <!-- Aim reticle -->
+      <div class="reticle" id="reticle" aria-hidden="true"><span></span></div>
+
+      <!-- Start Screen -->
+      <section class="overlay start-overlay" id="startScreen">
+        <div class="overlay-inner start-inner">
+          <div class="badge">HISTORICAL FICTION • ARCADE DEFENSE</div>
+          <h1 class="title">
+            <span class="title-line1">SANDS OF THE</span>
+            <span class="title-line2">CITADEL</span>
+          </h1>
+          <p class="subtitle">Year 1191. An invading crusader army marches across the desert to claim your city. You are the master defender on the citadel walls. Hold the gate. Protect the people. Let no invader pass.</p>
+          
+          <div class="lore-box">
+            <p><strong>A note on history:</strong> This is a stylized, fictional arcade defense inspired by medieval siege warfare. It does not represent any people or faith today — only the timeless desire to protect home from conquest. Play with respect.</p>
+          </div>
+
+          <div class="cta-row">
+            <button id="btnPlay" class="primary-btn pulse">▶ PLAY NOW</button>
+            <button id="btnHow2" class="secondary-btn">HOW TO PLAY</button>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feat"><span>⚔️</span><b>10-sec action</b><em>Instant siege — no waiting</em></div>
+            <div class="feat"><span>🎯</span><b>Precise aim</b><em>Mouse, keys or touch</em></div>
+            <div class="feat"><span>💥</span><b>Juicy feedback</b><em>Shake, particles, impacts</em></div>
+            <div class="feat"><span>🏆</span><b>Legends Board</b><em>Local high scores</em></div>
+          </div>
+
+          <div class="start-footer">
+            <div class="keys-line"><kbd>WASD</kbd> <kbd>↑↓</kbd> move • <kbd>SPACE</kbd> / <kbd>CLICK</kbd> fire • <kbd>P</kbd> pause • <kbd>R</kbd> restart</div>
+            <div class="tiny">Optimized for 60 FPS • Works offline • No data collected</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How to Play -->
+      <section class="overlay hidden" id="howScreen">
+        <div class="overlay-inner modal">
+          <h2>How to Defend</h2>
+          <div class="how-grid">
+            <div class="how-card">
+              <div class="how-ico">🛡️</div>
+              <h3>Your Duty</h3>
+              <p>Enemies march from the desert toward the citadel gate (left). If they reach it, the gate loses integrity. At 0%, the city falls.</p>
+            </div>
+            <div class="how-card">
+              <div class="how-ico">🏹</div>
+              <h3>Shoot</h3>
+              <p><b>Desktop:</b> Move mouse to aim, click or <kbd>SPACE</kbd> to fire. <kbd>W/S</kbd> or <kbd>↑/↓</kbd> to move along the wall.<br><b>Mobile:</b> Drag right side to aim, tap <em>Fire</em>. Use left pad to move.</p>
+            </div>
+            <div class="how-card">
+              <div class="how-ico">🔥</div>
+              <h3>Score & Combo</h3>
+              <p>Chain hits without missing to build combo ×2.0, ×3.0… Headshots give +50. Every 5 waves you face a ram! Collect falling banners for heal & rapid fire.</p>
+            </div>
+          </div>
+          <div class="how-actions">
+            <button class="primary-btn" id="btnHowPlay">UNDERSTOOD — TO BATTLE</button>
+            <button class="secondary-btn" id="btnHowClose">Close</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pause -->
+      <section class="overlay hidden" id="pauseScreen">
+        <div class="overlay-inner modal pause-modal">
+          <h2>⏸ Paused</h2>
+          <p>Take a breath, defender. The siege can wait a moment.</p>
+          <div class="stack">
+            <button id="btnResume" class="primary-btn">RESUME (P)</button>
+            <button id="btnRestart1" class="secondary-btn">RESTART (R)</button>
+            <button id="btnHome1" class="ghost-btn large">EXIT TO MENU</button>
+          </div>
+          <label class="toggle"><input type="checkbox" id="chkReduceMotion"> Reduce motion & particles</label>
+        </div>
+      </section>
+
+      <!-- Game Over -->
+      <section class="overlay hidden" id="overScreen">
+        <div class="overlay-inner modal over-modal">
+          <div class="over-badge" id="overBadge">THE GATE HAS FALLEN</div>
+          <h2 id="overTitle">City Held for Glory</h2>
+          <div class="score-hero">
+            <div class="hero-score">
+              <span>SCORE</span>
+              <b id="overScore">0</b>
+            </div>
+            <div class="hero-stats">
+              <div><span>Wave reached</span><b id="overWave">1</b></div>
+              <div><span>Enemies stopped</span><b id="overKills">0</b></div>
+              <div><span>Accuracy</span><b id="overAcc">0%</b></div>
+              <div><span>Best combo</span><b id="overCombo">×1</b></div>
+            </div>
+          </div>
+
+          <div class="name-entry" id="nameEntry">
+            <p>🎉 New legend! Enter your name for the Hall of Defenders:</p>
+            <div class="name-row">
+              <input id="nameInput" maxlength="14" placeholder="Your name" autocomplete="off" />
+              <button id="btnSaveScore" class="primary-btn">Save</button>
+            </div>
+          </div>
+
+          <div class="over-actions">
+            <button id="btnAgain" class="primary-btn pulse">↻ PLAY AGAIN (R)</button>
+            <button id="btnHome2" class="secondary-btn">MENU</button>
+          </div>
+
+          <div class="mini-board" id="miniBoard"></div>
+        </div>
+      </section>
+
+      <!-- Leaderboard -->
+      <section class="overlay hidden" id="boardScreen">
+        <div class="overlay-inner modal board-modal">
+          <h2>🏆 Hall of Defenders</h2>
+          <p>Top defenders of the citadel — stored only on this device.</p>
+          <div id="boardTable" class="board-table"></div>
+          <div class="board-actions">
+            <button id="btnBoardClose" class="secondary-btn">Close</button>
+            <button id="btnBoardClear" class="ghost-btn danger">Clear Scores</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floating messages -->
+      <div id="toast" class="toast hidden"></div>
+    </div>
+
+    <!-- Below-canvas info -->
+    <div class="below">
+      <div class="below-card">
+        <h3>Master the Defense</h3>
+        <ul>
+          <li><b>Hold the line:</b> Stand on the wall ledges. Shift position to intercept different lanes.</li>
+          <li><b>Lead your shots:</b> Enemies keep marching — aim slightly ahead.</li>
+          <li><b>Watch the banners:</b> Gold banners = heal, Azure = 5-sec rapid volley.</li>
+          <li><b>Ram alert:</b> When horns sound and dust rises, focus fire on the ram — it smashes the gate for 30 damage.</li>
+        </ul>
+      </div>
+      <div class="below-card">
+        <h3>About this game</h3>
+        <p>Built as a respectful historical-fantasy arcade defense. All art is procedural canvas drawing — no external assets, runs at 60fps on mobile & desktop. Your high scores never leave your device. Created for learning and play.</p>
+        <div class="pill-row"><span class="mini-pill">60 FPS</span><span class="mini-pill">Touch + Keyboard</span><span class="mini-pill">Offline</span><span class="mini-pill">Juicy FX</span></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <span>Made for play • Respect for all peoples • History as lesson, not hatred.</span>
+  </footer>
 
   <script type="module" src="main.js"></script>
 </body>
