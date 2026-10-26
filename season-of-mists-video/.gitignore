@@ -10,3 +10,5 @@ scenes/*.png
 visuals/frames/
 __pycache__/
 *.log
+audio/tmp/
+logs_render.txt
