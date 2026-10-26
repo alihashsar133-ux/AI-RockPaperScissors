@@ -1,0 +1,202 @@
+{
+  "project": "ویدیوی تحلیلی «فصل مه‌ها» — سندمن، نیل گیمن (ارائهٔ درسی)",
+  "target_total_video_sec": 600,
+  "opening_credits": {
+    "start_sec": 0.0,
+    "end_sec": 15.0,
+    "type": "on-screen text, no narration"
+  },
+  "closing_credits": {
+    "start_sec": 590.087,
+    "end_sec": 600.087,
+    "type": "on-screen text, no narration"
+  },
+  "total_video_duration_sec": 600.087,
+  "narration_file": "audio/narration_final.wav",
+  "narration_format": "WAV 24000 Hz, mono, 16-bit",
+  "tts_engine_note": "Piper 1.8.0 installed; Persian voice model (HuggingFace) unreachable in sandbox -> fallback neural TTS, voice selected by user audition (voice-00). Rebuild path: audio/make_narration_piper.py",
+  "processing": "trim+compress pauses; uniform atempo=1.132; per-scene loudnorm I=-16; gap 0.7s between scenes",
+  "subtitles": "none (by project decision)",
+  "scenes": [
+    {
+      "scene": "SCENE_01",
+      "title_fa": "فصل مه‌ها چیست؟ — معرفی اثر و گردهمایی خانواده",
+      "file": "audio/scene_01.wav",
+      "words": 205,
+      "duration_sec": 82.2,
+      "raw_tts_duration_sec": 97.64,
+      "narration_range_sec": [
+        0.0,
+        82.2
+      ],
+      "video_range_sec": [
+        15.0,
+        97.2
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_02",
+      "title_fa": "وداع‌های رؤیا — آماده‌سازی برای سفری بی‌بازگشت",
+      "file": "audio/scene_02.wav",
+      "words": 164,
+      "duration_sec": 70.11,
+      "raw_tts_duration_sec": 82.56,
+      "narration_range_sec": [
+        82.9,
+        153.01
+      ],
+      "video_range_sec": [
+        97.9,
+        168.01
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_03",
+      "title_fa": "جهنم خالی — استعفای لوسیفر و پایان یک عصر",
+      "file": "audio/scene_03.wav",
+      "words": 186,
+      "duration_sec": 75.481,
+      "raw_tts_duration_sec": 88.32,
+      "narration_range_sec": [
+        153.71,
+        229.191
+      ],
+      "video_range_sec": [
+        168.71,
+        244.191
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_04",
+      "title_fa": "بازار خدایان — اسطوره‌ها در آستانهٔ یک قلمرو خالی",
+      "file": "audio/scene_04.wav",
+      "words": 172,
+      "duration_sec": 69.15,
+      "raw_tts_duration_sec": 79.68,
+      "narration_range_sec": [
+        229.891,
+        299.041
+      ],
+      "video_range_sec": [
+        244.891,
+        314.041
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_05",
+      "title_fa": "مذاکره‌ها و تهدیدها — سیاست کیهانی و گروگان‌گیری نادا",
+      "file": "audio/scene_05.wav",
+      "words": 175,
+      "duration_sec": 72.931,
+      "raw_tts_duration_sec": 84.8,
+      "narration_range_sec": [
+        299.741,
+        372.672
+      ],
+      "video_range_sec": [
+        314.741,
+        387.672
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_06",
+      "title_fa": "بخشش نادا — نقطهٔ چرخش اخلاقی رؤیا",
+      "file": "audio/scene_06.wav",
+      "words": 169,
+      "duration_sec": 66.845,
+      "raw_tts_duration_sec": 78.12,
+      "narration_range_sec": [
+        373.372,
+        440.217
+      ],
+      "video_range_sec": [
+        388.372,
+        455.217
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_07",
+      "title_fa": "سپردن کلید — تعادل جدید میان بهشت و جهنم",
+      "file": "audio/scene_07.wav",
+      "words": 134,
+      "duration_sec": 50.948,
+      "raw_tts_duration_sec": 60.24,
+      "narration_range_sec": [
+        440.917,
+        491.865
+      ],
+      "video_range_sec": [
+        455.917,
+        506.865
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_08",
+      "title_fa": "لوسیفر در ساحل — آزادی، بی‌هدفی و پایان یک نقش",
+      "file": "audio/scene_08.wav",
+      "words": 77,
+      "duration_sec": 33.62,
+      "raw_tts_duration_sec": 39.76,
+      "narration_range_sec": [
+        492.565,
+        526.185
+      ],
+      "video_range_sec": [
+        507.565,
+        541.185
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_09",
+      "title_fa": "جهنم جدید — آیا رستگاری ممکن است؟",
+      "file": "audio/scene_09.wav",
+      "words": 69,
+      "duration_sec": 29.631,
+      "raw_tts_duration_sec": 34.76,
+      "narration_range_sec": [
+        526.885,
+        556.516
+      ],
+      "video_range_sec": [
+        541.885,
+        571.516
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    },
+    {
+      "scene": "SCENE_10",
+      "title_fa": "تولد دوباره — چرخهٔ بخشش و رهایی",
+      "file": "audio/scene_10.wav",
+      "words": 45,
+      "duration_sec": 17.871,
+      "raw_tts_duration_sec": 21.28,
+      "narration_range_sec": [
+        557.216,
+        575.087
+      ],
+      "video_range_sec": [
+        572.216,
+        590.087
+      ],
+      "tts_engine": "arena-neural-tts (fallback for Piper/Mana)",
+      "voice_source": "voice-00"
+    }
+  ]
+}

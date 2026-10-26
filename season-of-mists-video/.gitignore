@@ -1,0 +1,12 @@
+.venv/
+pylibs/
+tools/
+segments/
+*.wav
+*.mp4
+*.mp3
+output/
+scenes/*.png
+visuals/frames/
+__pycache__/
+*.log
