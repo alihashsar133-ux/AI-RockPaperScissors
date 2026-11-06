@@ -22,3 +22,13 @@ Workflow: **one scene = one ZIP = one "How is it?" gate** (production prompt v4.
 Pipeline per scene: keyframe → green-screen layers painted on the keyframe's coordinates
 (skill route B) → keying → JSON specs (6–8 s, ≥2 cues) → render → qa.py → independent review →
 concat → ZIP → "How is it?".
+
+## Delivery archive (off-repo)
+
+The scene ZIPs are large, so they are not committed. Scene 04 is uploaded here:
+
+- **S4 THE GATHERING** — `SCENE_04_delivery_20261106_064801.zip` (54.9 MB, 34 files)
+  https://drive.google.com/file/d/1_GNZDoXwDz9N65CkZ3gwm1ESQvtVOyFN/view
+  rebuild with: `python3 tools/render_scene.py` (per clip) → `tools/assemble.py` →
+  `tools/qa.py --scene scene_04/scene_04.mp4` → `tools/package_scene.py`
+  (the renderer is deterministic: a rebuild reproduces the same 54,945,428-byte ZIP)
