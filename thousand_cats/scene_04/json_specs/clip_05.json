@@ -1,0 +1,144 @@
+{
+  "scene": "S4",
+  "title_scene": "THE GATHERING",
+  "duration_s": 8.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "picture": [
+    1920,
+    804
+  ],
+  "aspect": "2.39:1 letterboxed inside 1920x1080",
+  "audio": null,
+  "text": null,
+  "watermark": false,
+  "palette": {
+    "deep_cobalt": "#101f3c",
+    "night_blue": "#1b2c50",
+    "silver": "#c9d6e8",
+    "moon_white": "#e9eef6",
+    "indigo_mist": "#3a3474",
+    "stone_grey": "#6c7a8c",
+    "amber_eye": "#d99a3f"
+  },
+  "surreal_signatures": [
+    "wax_bending_cross",
+    "gravestones_on_crutches",
+    "glowing_eyes_in_mist"
+  ],
+  "clip": "clip_05",
+  "seed": 405,
+  "note": "Close on the prophet against the moon; the wax arm sags under her weight, the moon brightens, the last near clusters blink.",
+  "cues": [
+    {
+      "type": "camera_push",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "from": 1.14,
+        "to": 1.32,
+        "ease": "sine_in_out",
+        "anchor": [
+          1035,
+          215
+        ]
+      },
+      "note": "push in to a close shot of her silhouette against the moon"
+    },
+    {
+      "type": "prophet_breath",
+      "element": "prophet",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 1.6,
+        "hz": 0.16
+      },
+      "note": "long neck breathing, slow"
+    },
+    {
+      "type": "cross_wax",
+      "element": "cross",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "sag_from": 0.9,
+        "sag_to": 0.97,
+        "arm_from": 0.84,
+        "arm_to": 0.92
+      },
+      "note": "the arm under her sags to its deepest point"
+    },
+    {
+      "type": "moon_glow",
+      "element": "moon",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 1.2,
+        "hz": 0.1,
+        "base": 0.45
+      },
+      "note": "the moon swells with light"
+    },
+    {
+      "type": "mist",
+      "element": "mist_front",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "front",
+        "dx": -30,
+        "dy": -5,
+        "alpha_from": 0.9,
+        "alpha_to": 0.8
+      },
+      "note": "mist sinks away from the moon"
+    },
+    {
+      "type": "eyes_blink",
+      "element": "eyes",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "clusters": [
+          0,
+          7,
+          8
+        ],
+        "hz": 0.3,
+        "seed": 21
+      },
+      "note": "three clusters blink, half asleep"
+    },
+    {
+      "type": "stone_sway",
+      "element": "gravestones",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 2.0,
+        "hz": 0.06
+      },
+      "note": "the rows sway under the moon"
+    }
+  ]
+}

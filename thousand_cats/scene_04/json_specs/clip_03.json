@@ -1,0 +1,172 @@
+{
+  "scene": "S4",
+  "title_scene": "THE GATHERING",
+  "duration_s": 8.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "picture": [
+    1920,
+    804
+  ],
+  "aspect": "2.39:1 letterboxed inside 1920x1080",
+  "audio": null,
+  "text": null,
+  "watermark": false,
+  "palette": {
+    "deep_cobalt": "#101f3c",
+    "night_blue": "#1b2c50",
+    "silver": "#c9d6e8",
+    "moon_white": "#e9eef6",
+    "indigo_mist": "#3a3474",
+    "stone_grey": "#6c7a8c",
+    "amber_eye": "#d99a3f"
+  },
+  "surreal_signatures": [
+    "wax_bending_cross",
+    "gravestones_on_crutches",
+    "glowing_eyes_in_mist"
+  ],
+  "clip": "clip_03",
+  "seed": 403,
+  "note": "Down at ground level with the two witnesses: the white kitten tilts its head, the tabby's tail moves, the gravestones on their crutches sway as if breathing.",
+  "cues": [
+    {
+      "type": "camera_pan",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 120,
+        "ease": "ease_out"
+      },
+      "note": "pan left, decelerating onto the witnesses"
+    },
+    {
+      "type": "camera_push",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "from": 1.1,
+        "to": 1.16,
+        "ease": "sine_in_out",
+        "anchor": [
+          330,
+          600
+        ]
+      },
+      "note": "hold the two cats big in the lower third"
+    },
+    {
+      "type": "camera_rise",
+      "element": "camera",
+      "t": [
+        0.5,
+        8
+      ],
+      "params": {
+        "from": 46,
+        "to": -58,
+        "ease": "sine_in_out"
+      },
+      "note": "tilt up out of the two-shot to the moon"
+    },
+    {
+      "type": "kitten_tilt",
+      "element": "kitten",
+      "t": [
+        0.6,
+        7.4
+      ],
+      "params": {
+        "deg": 1.4,
+        "hz": 0.3
+      },
+      "note": "the kitten tilts its head, ears leading"
+    },
+    {
+      "type": "tabby_tail",
+      "element": "tabby",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 0.014,
+        "hz": 0.15
+      },
+      "note": "the tabby's tail swings slowly"
+    },
+    {
+      "type": "stone_sway",
+      "element": "gravestones",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 2.6,
+        "hz": 0.08
+      },
+      "note": "the rows of leaning stones sway on their crutches"
+    },
+    {
+      "type": "eyes_blink",
+      "element": "eyes",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "clusters": [
+          0,
+          1,
+          2,
+          8
+        ],
+        "hz": 0.5,
+        "seed": 3
+      },
+      "note": "the nearest clusters blink fast, nervous"
+    },
+    {
+      "type": "mist",
+      "element": "mist_front",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "front",
+        "dx": -70,
+        "dy": -6,
+        "rise": -8,
+        "alpha_from": 1.0,
+        "alpha_to": 1.1
+      },
+      "note": "mist climbs, half hiding the ground"
+    },
+    {
+      "type": "cross_wax",
+      "element": "cross",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "sag_from": 0.78,
+        "sag_to": 0.84,
+        "arm_from": 0.72,
+        "arm_to": 0.78
+      },
+      "note": "the cross keeps melting at the edge of frame (continuous with clip_02)"
+    }
+  ]
+}

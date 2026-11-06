@@ -1,0 +1,10 @@
+# build scratch (stays on disk, not in git)
+_stage/
+thousand_cats/scene_04/frames/
+thousand_cats/tools/__pycache__/
+
+# heavy render outputs: kept in the workspace and inside the delivery ZIP,
+# not committed to the repo
+thousand_cats/_approvals/*.zip
+thousand_cats/scene_04/clips/*.mp4
+thousand_cats/scene_04/scene_04.mp4

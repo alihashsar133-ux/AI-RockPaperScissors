@@ -1,0 +1,145 @@
+{
+  "scene": "S4",
+  "title_scene": "THE GATHERING",
+  "duration_s": 8.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "picture": [
+    1920,
+    804
+  ],
+  "aspect": "2.39:1 letterboxed inside 1920x1080",
+  "audio": null,
+  "text": null,
+  "watermark": false,
+  "palette": {
+    "deep_cobalt": "#101f3c",
+    "night_blue": "#1b2c50",
+    "silver": "#c9d6e8",
+    "moon_white": "#e9eef6",
+    "indigo_mist": "#3a3474",
+    "stone_grey": "#6c7a8c",
+    "amber_eye": "#d99a3f"
+  },
+  "surreal_signatures": [
+    "wax_bending_cross",
+    "gravestones_on_crutches",
+    "glowing_eyes_in_mist"
+  ],
+  "clip": "clip_02",
+  "seed": 402,
+  "note": "Push in on the cross and the prophet. The wax sag deepens until the arm visibly hangs; the eye clusters in the mist blink out of sync.",
+  "cues": [
+    {
+      "type": "camera_push",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "from": 1.08,
+        "to": 1.26,
+        "ease": "sine_in_out",
+        "anchor": [
+          1050,
+          250
+        ]
+      },
+      "note": "slow push to a medium on the cross head and the prophet"
+    },
+    {
+      "type": "cross_wax",
+      "element": "cross",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "sag_from": 0.4,
+        "sag_to": 0.78,
+        "arm_from": 0.38,
+        "arm_to": 0.72
+      },
+      "note": "the cross melts further, arms bending down at the tips"
+    },
+    {
+      "type": "prophet_breath",
+      "element": "prophet",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 1.2,
+        "hz": 0.2
+      },
+      "note": "the Siamese breathes, neck sways"
+    },
+    {
+      "type": "eyes_blink",
+      "element": "eyes",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "clusters": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "hz": 0.35,
+        "seed": 11
+      },
+      "note": "four clusters blink independently"
+    },
+    {
+      "type": "mist",
+      "element": "mist_front",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "front",
+        "dx": -40,
+        "dy": -8,
+        "alpha_from": 1.0,
+        "alpha_to": 0.9
+      },
+      "note": "foreground mist thins as we get closer"
+    },
+    {
+      "type": "moon_glow",
+      "element": "moon",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 0.8,
+        "hz": 0.15,
+        "base": 0.55
+      },
+      "note": "moon glow narrows"
+    },
+    {
+      "type": "stone_sway",
+      "element": "gravestones",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 1.6,
+        "hz": 0.07
+      },
+      "note": "the rows keep breathing behind the cross"
+    }
+  ]
+}

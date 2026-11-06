@@ -1,0 +1,44 @@
+{
+  "siamese_prophet.png": {
+    "source_layer": "prophet_rgba.png",
+    "source_box_1920x804": [
+      1098,
+      106,
+      1220,
+      386
+    ],
+    "size": [
+      122,
+      280
+    ],
+    "note": "Siamese prophet - cream body, seal points, ice-blue eyes, overlong neck"
+  },
+  "white_kitten.png": {
+    "source_layer": "kitten_rgba.png",
+    "source_box_1920x804": [
+      217,
+      589,
+      436,
+      797
+    ],
+    "size": [
+      219,
+      208
+    ],
+    "note": "White kitten - oversized ears, grey-tipped tail, seen from behind"
+  },
+  "brown_tabby.png": {
+    "source_layer": "tabby_rgba.png",
+    "source_box_1920x804": [
+      433,
+      510,
+      667,
+      800
+    ],
+    "size": [
+      234,
+      290
+    ],
+    "note": "Brown tabby guide - amber eyes, notched ear, striped"
+  }
+}

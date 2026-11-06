@@ -1,0 +1,159 @@
+{
+  "scene": "S4",
+  "title_scene": "THE GATHERING",
+  "duration_s": 8.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "picture": [
+    1920,
+    804
+  ],
+  "aspect": "2.39:1 letterboxed inside 1920x1080",
+  "audio": null,
+  "text": null,
+  "watermark": false,
+  "palette": {
+    "deep_cobalt": "#101f3c",
+    "night_blue": "#1b2c50",
+    "silver": "#c9d6e8",
+    "moon_white": "#e9eef6",
+    "indigo_mist": "#3a3474",
+    "stone_grey": "#6c7a8c",
+    "amber_eye": "#d99a3f"
+  },
+  "surreal_signatures": [
+    "wax_bending_cross",
+    "gravestones_on_crutches",
+    "glowing_eyes_in_mist"
+  ],
+  "clip": "clip_01",
+  "seed": 401,
+  "note": "Opening. Low angle on the moon and the wax cross in the right third; the camera begins its slow pan left and the first eye-clusters wake in the mist.",
+  "cues": [
+    {
+      "type": "camera_pan",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 150,
+        "ease": "sine_in_out"
+      },
+      "note": "slow pan left, 150 px across the picture"
+    },
+    {
+      "type": "camera_drift",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 2.4,
+        "hz": 0.11
+      },
+      "note": "hand-held breath, 2.4 px"
+    },
+    {
+      "type": "cross_wax",
+      "element": "cross",
+      "t": [
+        0.4,
+        8
+      ],
+      "params": {
+        "sag_from": 0.1,
+        "sag_to": 0.4,
+        "arm_from": 0.1,
+        "arm_to": 0.38
+      },
+      "note": "the stone cross starts to slump like warm wax"
+    },
+    {
+      "type": "mist",
+      "element": "mist_front",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "front",
+        "dx": -90,
+        "dy": -10,
+        "rise": -6,
+        "alpha_from": 0.95,
+        "alpha_to": 1.05
+      },
+      "note": "indigo mist slides left across the foreground"
+    },
+    {
+      "type": "mist",
+      "element": "mist_back",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "back",
+        "dx": 60,
+        "dy": 6,
+        "alpha_from": 0.85,
+        "alpha_to": 0.95
+      },
+      "note": "back mist drifts the other way, depth"
+    },
+    {
+      "type": "eyes_ignite",
+      "element": "eyes",
+      "t": [
+        0.6,
+        8
+      ],
+      "params": {
+        "clusters": [
+          1,
+          2,
+          3,
+          8,
+          0,
+          7
+        ],
+        "stagger": 0.9,
+        "glow": 1.0
+      },
+      "note": "six eye clusters wake one after another"
+    },
+    {
+      "type": "moon_glow",
+      "element": "moon",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 1.0,
+        "hz": 0.11,
+        "base": 0.5
+      },
+      "note": "moon light breathes"
+    },
+    {
+      "type": "stone_sway",
+      "element": "gravestones",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 1.2,
+        "hz": 0.075
+      },
+      "note": "the leaning stones breathe on their crutches from the first frame"
+    }
+  ]
+}

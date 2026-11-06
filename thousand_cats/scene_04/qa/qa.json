@@ -1,0 +1,783 @@
+{
+  "results": [
+    {
+      "check": "clip_01: >= 2 active cues",
+      "pass": true,
+      "detail": "8 active of 8"
+    },
+    {
+      "check": "clip_01: every cue type implemented by the renderer",
+      "pass": true,
+      "detail": "unknown=[]"
+    },
+    {
+      "check": "clip_01: duration 6-8 s",
+      "pass": true,
+      "detail": "8.000s (spec 8.0s)"
+    },
+    {
+      "check": "clip_01: spec duration matches renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_01: 1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "check": "clip_01: 24 fps",
+      "pass": true,
+      "detail": "24.0"
+    },
+    {
+      "check": "clip_01: h264 / yuv420p",
+      "pass": true,
+      "detail": "h264 yuv420p"
+    },
+    {
+      "check": "clip_01: no audio track",
+      "pass": true,
+      "detail": "silent"
+    },
+    {
+      "check": "clip_01: 2.39:1 letterbox bars are black",
+      "pass": true,
+      "detail": "top/bottom 138 px"
+    },
+    {
+      "check": "clip_01: picture is moving (motion area >= 0.5%)",
+      "pass": true,
+      "detail": "motion area 13.41%, mean |d| 6.57"
+    },
+    {
+      "check": "clip_01: no dead pair of frames (static shot)",
+      "pass": true,
+      "detail": "min mean |d| 3.69"
+    },
+    {
+      "check": "clip_01: cold palette (blue >= red on 98.0% of pixels)",
+      "pass": true,
+      "detail": "{'mean_rgb': [23.0, 30.8, 47.3], 'bright_red': 0.0, 'mean_saturation': 24.4, 'cold_share': 0.98}"
+    },
+    {
+      "check": "clip_01: no bright reds / saturated cartoon colour",
+      "pass": true,
+      "detail": "bright_red 0.000%, saturation 24.4"
+    },
+    {
+      "check": "clip_01: signature wax_bending_cross",
+      "pass": true,
+      "detail": "cue=True, motion in cross region 35.72%"
+    },
+    {
+      "check": "clip_01: signature gravestones_on_crutches",
+      "pass": true,
+      "detail": "cue=True, motion in stone region 14.15%"
+    },
+    {
+      "check": "clip_01: signature glowing_eyes_in_mist (lit + alive)",
+      "pass": true,
+      "detail": "cue=True, amber px mean 228 max 491 std 117"
+    },
+    {
+      "check": "clip_01: no on-screen text in spec",
+      "pass": true,
+      "detail": "None"
+    },
+    {
+      "check": "clip_01: watermark disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_01: no flat overlay band (watermark / lower third)",
+      "pass": true,
+      "detail": "min picture std 34.0"
+    },
+    {
+      "check": "clip_02: >= 2 active cues",
+      "pass": true,
+      "detail": "7 active of 7"
+    },
+    {
+      "check": "clip_02: every cue type implemented by the renderer",
+      "pass": true,
+      "detail": "unknown=[]"
+    },
+    {
+      "check": "clip_02: duration 6-8 s",
+      "pass": true,
+      "detail": "8.000s (spec 8.0s)"
+    },
+    {
+      "check": "clip_02: spec duration matches renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_02: 1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "check": "clip_02: 24 fps",
+      "pass": true,
+      "detail": "24.0"
+    },
+    {
+      "check": "clip_02: h264 / yuv420p",
+      "pass": true,
+      "detail": "h264 yuv420p"
+    },
+    {
+      "check": "clip_02: no audio track",
+      "pass": true,
+      "detail": "silent"
+    },
+    {
+      "check": "clip_02: 2.39:1 letterbox bars are black",
+      "pass": true,
+      "detail": "top/bottom 138 px"
+    },
+    {
+      "check": "clip_02: picture is moving (motion area >= 0.5%)",
+      "pass": true,
+      "detail": "motion area 10.33%, mean |d| 5.22"
+    },
+    {
+      "check": "clip_02: no dead pair of frames (static shot)",
+      "pass": true,
+      "detail": "min mean |d| 2.61"
+    },
+    {
+      "check": "clip_02: cold palette (blue >= red on 97.7% of pixels)",
+      "pass": true,
+      "detail": "{'mean_rgb': [23.6, 31.9, 48.8], 'bright_red': 0.0, 'mean_saturation': 25.2, 'cold_share': 0.977}"
+    },
+    {
+      "check": "clip_02: no bright reds / saturated cartoon colour",
+      "pass": true,
+      "detail": "bright_red 0.000%, saturation 25.2"
+    },
+    {
+      "check": "clip_02: signature wax_bending_cross",
+      "pass": true,
+      "detail": "cue=True, motion in cross region 25.97%"
+    },
+    {
+      "check": "clip_02: signature gravestones_on_crutches",
+      "pass": true,
+      "detail": "cue=True, motion in stone region 12.42%"
+    },
+    {
+      "check": "clip_02: signature glowing_eyes_in_mist (lit + alive)",
+      "pass": true,
+      "detail": "cue=True, amber px mean 246 max 382 std 87"
+    },
+    {
+      "check": "clip_02: no on-screen text in spec",
+      "pass": true,
+      "detail": "None"
+    },
+    {
+      "check": "clip_02: watermark disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_02: no flat overlay band (watermark / lower third)",
+      "pass": true,
+      "detail": "min picture std 34.1"
+    },
+    {
+      "check": "clip_03: >= 2 active cues",
+      "pass": true,
+      "detail": "9 active of 9"
+    },
+    {
+      "check": "clip_03: every cue type implemented by the renderer",
+      "pass": true,
+      "detail": "unknown=[]"
+    },
+    {
+      "check": "clip_03: duration 6-8 s",
+      "pass": true,
+      "detail": "8.000s (spec 8.0s)"
+    },
+    {
+      "check": "clip_03: spec duration matches renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_03: 1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "check": "clip_03: 24 fps",
+      "pass": true,
+      "detail": "24.0"
+    },
+    {
+      "check": "clip_03: h264 / yuv420p",
+      "pass": true,
+      "detail": "h264 yuv420p"
+    },
+    {
+      "check": "clip_03: no audio track",
+      "pass": true,
+      "detail": "silent"
+    },
+    {
+      "check": "clip_03: 2.39:1 letterbox bars are black",
+      "pass": true,
+      "detail": "top/bottom 138 px"
+    },
+    {
+      "check": "clip_03: picture is moving (motion area >= 0.5%)",
+      "pass": true,
+      "detail": "motion area 16.96%, mean |d| 7.86"
+    },
+    {
+      "check": "clip_03: no dead pair of frames (static shot)",
+      "pass": true,
+      "detail": "min mean |d| 4.27"
+    },
+    {
+      "check": "clip_03: cold palette (blue >= red on 97.7% of pixels)",
+      "pass": true,
+      "detail": "{'mean_rgb': [24.6, 32.3, 48.4], 'bright_red': 0.0, 'mean_saturation': 23.9, 'cold_share': 0.977}"
+    },
+    {
+      "check": "clip_03: no bright reds / saturated cartoon colour",
+      "pass": true,
+      "detail": "bright_red 0.000%, saturation 23.9"
+    },
+    {
+      "check": "clip_03: signature wax_bending_cross",
+      "pass": true,
+      "detail": "cue=True, motion in cross region 42.96%"
+    },
+    {
+      "check": "clip_03: signature gravestones_on_crutches",
+      "pass": true,
+      "detail": "cue=True, motion in stone region 16.75%"
+    },
+    {
+      "check": "clip_03: signature glowing_eyes_in_mist (lit + alive)",
+      "pass": true,
+      "detail": "cue=True, amber px mean 484 max 824 std 260"
+    },
+    {
+      "check": "clip_03: no on-screen text in spec",
+      "pass": true,
+      "detail": "None"
+    },
+    {
+      "check": "clip_03: watermark disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_03: no flat overlay band (watermark / lower third)",
+      "pass": true,
+      "detail": "min picture std 34.7"
+    },
+    {
+      "check": "clip_04: >= 2 active cues",
+      "pass": true,
+      "detail": "7 active of 7"
+    },
+    {
+      "check": "clip_04: every cue type implemented by the renderer",
+      "pass": true,
+      "detail": "unknown=[]"
+    },
+    {
+      "check": "clip_04: duration 6-8 s",
+      "pass": true,
+      "detail": "8.000s (spec 8.0s)"
+    },
+    {
+      "check": "clip_04: spec duration matches renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_04: 1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "check": "clip_04: 24 fps",
+      "pass": true,
+      "detail": "24.0"
+    },
+    {
+      "check": "clip_04: h264 / yuv420p",
+      "pass": true,
+      "detail": "h264 yuv420p"
+    },
+    {
+      "check": "clip_04: no audio track",
+      "pass": true,
+      "detail": "silent"
+    },
+    {
+      "check": "clip_04: 2.39:1 letterbox bars are black",
+      "pass": true,
+      "detail": "top/bottom 138 px"
+    },
+    {
+      "check": "clip_04: picture is moving (motion area >= 0.5%)",
+      "pass": true,
+      "detail": "motion area 15.21%, mean |d| 7.26"
+    },
+    {
+      "check": "clip_04: no dead pair of frames (static shot)",
+      "pass": true,
+      "detail": "min mean |d| 3.43"
+    },
+    {
+      "check": "clip_04: cold palette (blue >= red on 97.8% of pixels)",
+      "pass": true,
+      "detail": "{'mean_rgb': [24.1, 32.1, 48.7], 'bright_red': 0.0, 'mean_saturation': 24.6, 'cold_share': 0.978}"
+    },
+    {
+      "check": "clip_04: no bright reds / saturated cartoon colour",
+      "pass": true,
+      "detail": "bright_red 0.000%, saturation 24.6"
+    },
+    {
+      "check": "clip_04: signature wax_bending_cross",
+      "pass": true,
+      "detail": "cue=True, motion in cross region 41.86%"
+    },
+    {
+      "check": "clip_04: signature gravestones_on_crutches",
+      "pass": true,
+      "detail": "cue=True, motion in stone region 13.59%"
+    },
+    {
+      "check": "clip_04: signature glowing_eyes_in_mist (lit + alive)",
+      "pass": true,
+      "detail": "cue=True, amber px mean 269 max 546 std 148"
+    },
+    {
+      "check": "clip_04: no on-screen text in spec",
+      "pass": true,
+      "detail": "None"
+    },
+    {
+      "check": "clip_04: watermark disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_04: no flat overlay band (watermark / lower third)",
+      "pass": true,
+      "detail": "min picture std 34.4"
+    },
+    {
+      "check": "clip_05: >= 2 active cues",
+      "pass": true,
+      "detail": "7 active of 7"
+    },
+    {
+      "check": "clip_05: every cue type implemented by the renderer",
+      "pass": true,
+      "detail": "unknown=[]"
+    },
+    {
+      "check": "clip_05: duration 6-8 s",
+      "pass": true,
+      "detail": "8.000s (spec 8.0s)"
+    },
+    {
+      "check": "clip_05: spec duration matches renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_05: 1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "check": "clip_05: 24 fps",
+      "pass": true,
+      "detail": "24.0"
+    },
+    {
+      "check": "clip_05: h264 / yuv420p",
+      "pass": true,
+      "detail": "h264 yuv420p"
+    },
+    {
+      "check": "clip_05: no audio track",
+      "pass": true,
+      "detail": "silent"
+    },
+    {
+      "check": "clip_05: 2.39:1 letterbox bars are black",
+      "pass": true,
+      "detail": "top/bottom 138 px"
+    },
+    {
+      "check": "clip_05: picture is moving (motion area >= 0.5%)",
+      "pass": true,
+      "detail": "motion area 10.36%, mean |d| 5.19"
+    },
+    {
+      "check": "clip_05: no dead pair of frames (static shot)",
+      "pass": true,
+      "detail": "min mean |d| 2.44"
+    },
+    {
+      "check": "clip_05: cold palette (blue >= red on 97.4% of pixels)",
+      "pass": true,
+      "detail": "{'mean_rgb': [24.4, 32.9, 49.7], 'bright_red': 0.0, 'mean_saturation': 25.3, 'cold_share': 0.974}"
+    },
+    {
+      "check": "clip_05: no bright reds / saturated cartoon colour",
+      "pass": true,
+      "detail": "bright_red 0.000%, saturation 25.3"
+    },
+    {
+      "check": "clip_05: signature wax_bending_cross",
+      "pass": true,
+      "detail": "cue=True, motion in cross region 26.72%"
+    },
+    {
+      "check": "clip_05: signature gravestones_on_crutches",
+      "pass": true,
+      "detail": "cue=True, motion in stone region 12.03%"
+    },
+    {
+      "check": "clip_05: signature glowing_eyes_in_mist (lit + alive)",
+      "pass": true,
+      "detail": "cue=True, amber px mean 224 max 290 std 46"
+    },
+    {
+      "check": "clip_05: no on-screen text in spec",
+      "pass": true,
+      "detail": "None"
+    },
+    {
+      "check": "clip_05: watermark disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_05: no flat overlay band (watermark / lower third)",
+      "pass": true,
+      "detail": "min picture std 35.1"
+    },
+    {
+      "check": "clip_06: >= 2 active cues",
+      "pass": true,
+      "detail": "9 active of 9"
+    },
+    {
+      "check": "clip_06: every cue type implemented by the renderer",
+      "pass": true,
+      "detail": "unknown=[]"
+    },
+    {
+      "check": "clip_06: duration 6-8 s",
+      "pass": true,
+      "detail": "8.000s (spec 8.0s)"
+    },
+    {
+      "check": "clip_06: spec duration matches renderer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_06: 1920x1080",
+      "pass": true,
+      "detail": "1920x1080"
+    },
+    {
+      "check": "clip_06: 24 fps",
+      "pass": true,
+      "detail": "24.0"
+    },
+    {
+      "check": "clip_06: h264 / yuv420p",
+      "pass": true,
+      "detail": "h264 yuv420p"
+    },
+    {
+      "check": "clip_06: no audio track",
+      "pass": true,
+      "detail": "silent"
+    },
+    {
+      "check": "clip_06: 2.39:1 letterbox bars are black",
+      "pass": true,
+      "detail": "top/bottom 138 px"
+    },
+    {
+      "check": "clip_06: picture is moving (motion area >= 0.5%)",
+      "pass": true,
+      "detail": "motion area 10.36%, mean |d| 4.90"
+    },
+    {
+      "check": "clip_06: no dead pair of frames (static shot)",
+      "pass": true,
+      "detail": "min mean |d| 1.63"
+    },
+    {
+      "check": "clip_06: cold palette (blue >= red on 98.1% of pixels)",
+      "pass": true,
+      "detail": "{'mean_rgb': [11.6, 15.5, 24.4], 'bright_red': 0.0, 'mean_saturation': 13.1, 'cold_share': 0.981}"
+    },
+    {
+      "check": "clip_06: no bright reds / saturated cartoon colour",
+      "pass": true,
+      "detail": "bright_red 0.000%, saturation 13.1"
+    },
+    {
+      "check": "clip_06: signature wax_bending_cross",
+      "pass": true,
+      "detail": "cue=True, motion in cross region 22.89%"
+    },
+    {
+      "check": "clip_06: signature gravestones_on_crutches",
+      "pass": true,
+      "detail": "cue=True, motion in stone region 13.11%"
+    },
+    {
+      "check": "clip_06: signature glowing_eyes_in_mist (lit + alive)",
+      "pass": true,
+      "detail": "cue=True, amber px mean 118 max 335 std 125"
+    },
+    {
+      "check": "clip_06: no on-screen text in spec",
+      "pass": true,
+      "detail": "None"
+    },
+    {
+      "check": "clip_06: watermark disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "clip_06: no flat overlay band (watermark / lower third)",
+      "pass": true,
+      "detail": "min picture std 14.1"
+    },
+    {
+      "check": "scene: 6-9 clips",
+      "pass": true,
+      "detail": "6 clips"
+    },
+    {
+      "check": "scene: total 45-60 s",
+      "pass": true,
+      "detail": "48.00s"
+    },
+    {
+      "check": "assets: reuse manifest written (hashes recorded for scene 05)",
+      "pass": true,
+      "detail": "12 PNG layers hashed"
+    },
+    {
+      "check": "determinism: same timestamp twice is pixel-identical",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "scene mp4: duration 45-60 s",
+      "pass": true,
+      "detail": "48.0s"
+    },
+    {
+      "check": "scene mp4: 1920x1080 24fps h264",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "scene mp4: no audio track",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "scene mp4: picture is alive end to end",
+      "pass": true,
+      "detail": "motion area 25.91%"
+    },
+    {
+      "check": "scene mp4: no colour jump between clips",
+      "pass": true,
+      "detail": "max mean RGB step 17.9"
+    }
+  ],
+  "per_clip": {
+    "clip_01": {
+      "duration": 8.0,
+      "cues": 8,
+      "motion_area": 0.13406863150352735,
+      "palette": {
+        "mean_rgb": [
+          23.0,
+          30.8,
+          47.3
+        ],
+        "bright_red": 0.0,
+        "mean_saturation": 24.4,
+        "cold_share": 0.98
+      },
+      "cross_motion": 0.35717478354978355,
+      "stone_motion": 0.1415249433106576,
+      "amber_px": 228.375,
+      "probe": {
+        "duration": 8.0,
+        "codec": "h264",
+        "w": 1920,
+        "h": 1080,
+        "fps": 24.0,
+        "pix_fmt": "yuv420p",
+        "audio": false
+      }
+    },
+    "clip_02": {
+      "duration": 8.0,
+      "cues": 7,
+      "motion_area": 0.10334042934303349,
+      "palette": {
+        "mean_rgb": [
+          23.6,
+          31.9,
+          48.8
+        ],
+        "bright_red": 0.0,
+        "mean_saturation": 25.2,
+        "cold_share": 0.977
+      },
+      "cross_motion": 0.25974702380952375,
+      "stone_motion": 0.12420823885109598,
+      "amber_px": 245.625,
+      "probe": {
+        "duration": 8.0,
+        "codec": "h264",
+        "w": 1920,
+        "h": 1080,
+        "fps": 24.0,
+        "pix_fmt": "yuv420p",
+        "audio": false
+      }
+    },
+    "clip_03": {
+      "duration": 8.0,
+      "cues": 9,
+      "motion_area": 0.16955722277336863,
+      "palette": {
+        "mean_rgb": [
+          24.6,
+          32.3,
+          48.4
+        ],
+        "bright_red": 0.0,
+        "mean_saturation": 23.9,
+        "cold_share": 0.977
+      },
+      "cross_motion": 0.42961011904761903,
+      "stone_motion": 0.16752834467120184,
+      "amber_px": 484.0,
+      "probe": {
+        "duration": 8.0,
+        "codec": "h264",
+        "w": 1920,
+        "h": 1080,
+        "fps": 24.0,
+        "pix_fmt": "yuv420p",
+        "audio": false
+      }
+    },
+    "clip_04": {
+      "duration": 8.0,
+      "cues": 7,
+      "motion_area": 0.152139274691358,
+      "palette": {
+        "mean_rgb": [
+          24.1,
+          32.1,
+          48.7
+        ],
+        "bright_red": 0.0,
+        "mean_saturation": 24.6,
+        "cold_share": 0.978
+      },
+      "cross_motion": 0.41864285714285715,
+      "stone_motion": 0.13592290249433106,
+      "amber_px": 269.375,
+      "probe": {
+        "duration": 8.0,
+        "codec": "h264",
+        "w": 1920,
+        "h": 1080,
+        "fps": 24.0,
+        "pix_fmt": "yuv420p",
+        "audio": false
+      }
+    },
+    "clip_05": {
+      "duration": 8.0,
+      "cues": 7,
+      "motion_area": 0.10362550981040562,
+      "palette": {
+        "mean_rgb": [
+          24.4,
+          32.9,
+          49.7
+        ],
+        "bright_red": 0.0,
+        "mean_saturation": 25.3,
+        "cold_share": 0.974
+      },
+      "cross_motion": 0.2672137445887446,
+      "stone_motion": 0.12031859410430838,
+      "amber_px": 224.375,
+      "probe": {
+        "duration": 8.0,
+        "codec": "h264",
+        "w": 1920,
+        "h": 1080,
+        "fps": 24.0,
+        "pix_fmt": "yuv420p",
+        "audio": false
+      }
+    },
+    "clip_06": {
+      "duration": 8.0,
+      "cues": 9,
+      "motion_area": 0.10361662257495588,
+      "palette": {
+        "mean_rgb": [
+          11.6,
+          15.5,
+          24.4
+        ],
+        "bright_red": 0.0,
+        "mean_saturation": 13.1,
+        "cold_share": 0.981
+      },
+      "cross_motion": 0.22890449134199137,
+      "stone_motion": 0.13113945578231292,
+      "amber_px": 118.25,
+      "probe": {
+        "duration": 8.0,
+        "codec": "h264",
+        "w": 1920,
+        "h": 1080,
+        "fps": 24.0,
+        "pix_fmt": "yuv420p",
+        "audio": false
+      }
+    }
+  }
+}

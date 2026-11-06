@@ -1,0 +1,60 @@
+{
+  "cross_rgba.png": {
+    "bbox_px": [
+      1087,
+      88,
+      1717,
+      718
+    ],
+    "coverage": 0.09491
+  },
+  "prophet_rgba.png": {
+    "bbox_px": [
+      1108,
+      116,
+      1209,
+      374
+    ],
+    "coverage": 0.00431
+  },
+  "kitten_rgba.png": {
+    "bbox_px": [
+      227,
+      599,
+      425,
+      786
+    ],
+    "coverage": 0.01043
+  },
+  "tabby_rgba.png": {
+    "bbox_px": [
+      442,
+      520,
+      656,
+      789
+    ],
+    "coverage": 0.01677
+  },
+  "mist_rgba.png": {
+    "bbox_px": [
+      0,
+      417,
+      1919,
+      803
+    ],
+    "coverage": 0.20215
+  },
+  "eyes_rgba.png": {
+    "bbox_px": [
+      181,
+      512,
+      1140,
+      647
+    ],
+    "coverage": 0.00015
+  },
+  "picture": [
+    1920,
+    804
+  ]
+}

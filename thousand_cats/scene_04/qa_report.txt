@@ -1,0 +1,138 @@
+SCENE 04 - THE GATHERING - QA REPORT
+project: A DREAM OF A THOUSAND CATS
+renderer: tools/render_scene.py (Pillow + ffmpeg, deterministic, seeded)
+spec dir: scene_04/json_specs   clip dir: scene_04/clips
+
+[PASS] clip_01: >= 2 active cues  |  8 active of 8
+[PASS] clip_01: every cue type implemented by the renderer  |  unknown=[]
+[PASS] clip_01: duration 6-8 s  |  8.000s (spec 8.0s)
+[PASS] clip_01: spec duration matches renderer
+[PASS] clip_01: 1920x1080  |  1920x1080
+[PASS] clip_01: 24 fps  |  24.0
+[PASS] clip_01: h264 / yuv420p  |  h264 yuv420p
+[PASS] clip_01: no audio track  |  silent
+[PASS] clip_01: 2.39:1 letterbox bars are black  |  top/bottom 138 px
+[PASS] clip_01: picture is moving (motion area >= 0.5%)  |  motion area 13.41%, mean |d| 6.57
+[PASS] clip_01: no dead pair of frames (static shot)  |  min mean |d| 3.69
+[PASS] clip_01: cold palette (blue >= red on 98.0% of pixels)  |  {'mean_rgb': [23.0, 30.8, 47.3], 'bright_red': 0.0, 'mean_saturation': 24.4, 'cold_share': 0.98}
+[PASS] clip_01: no bright reds / saturated cartoon colour  |  bright_red 0.000%, saturation 24.4
+[PASS] clip_01: signature wax_bending_cross  |  cue=True, motion in cross region 35.72%
+[PASS] clip_01: signature gravestones_on_crutches  |  cue=True, motion in stone region 14.15%
+[PASS] clip_01: signature glowing_eyes_in_mist (lit + alive)  |  cue=True, amber px mean 228 max 491 std 117
+[PASS] clip_01: no on-screen text in spec  |  None
+[PASS] clip_01: watermark disabled
+[PASS] clip_01: no flat overlay band (watermark / lower third)  |  min picture std 34.0
+[PASS] clip_02: >= 2 active cues  |  7 active of 7
+[PASS] clip_02: every cue type implemented by the renderer  |  unknown=[]
+[PASS] clip_02: duration 6-8 s  |  8.000s (spec 8.0s)
+[PASS] clip_02: spec duration matches renderer
+[PASS] clip_02: 1920x1080  |  1920x1080
+[PASS] clip_02: 24 fps  |  24.0
+[PASS] clip_02: h264 / yuv420p  |  h264 yuv420p
+[PASS] clip_02: no audio track  |  silent
+[PASS] clip_02: 2.39:1 letterbox bars are black  |  top/bottom 138 px
+[PASS] clip_02: picture is moving (motion area >= 0.5%)  |  motion area 10.33%, mean |d| 5.22
+[PASS] clip_02: no dead pair of frames (static shot)  |  min mean |d| 2.61
+[PASS] clip_02: cold palette (blue >= red on 97.7% of pixels)  |  {'mean_rgb': [23.6, 31.9, 48.8], 'bright_red': 0.0, 'mean_saturation': 25.2, 'cold_share': 0.977}
+[PASS] clip_02: no bright reds / saturated cartoon colour  |  bright_red 0.000%, saturation 25.2
+[PASS] clip_02: signature wax_bending_cross  |  cue=True, motion in cross region 25.97%
+[PASS] clip_02: signature gravestones_on_crutches  |  cue=True, motion in stone region 12.42%
+[PASS] clip_02: signature glowing_eyes_in_mist (lit + alive)  |  cue=True, amber px mean 246 max 382 std 87
+[PASS] clip_02: no on-screen text in spec  |  None
+[PASS] clip_02: watermark disabled
+[PASS] clip_02: no flat overlay band (watermark / lower third)  |  min picture std 34.1
+[PASS] clip_03: >= 2 active cues  |  9 active of 9
+[PASS] clip_03: every cue type implemented by the renderer  |  unknown=[]
+[PASS] clip_03: duration 6-8 s  |  8.000s (spec 8.0s)
+[PASS] clip_03: spec duration matches renderer
+[PASS] clip_03: 1920x1080  |  1920x1080
+[PASS] clip_03: 24 fps  |  24.0
+[PASS] clip_03: h264 / yuv420p  |  h264 yuv420p
+[PASS] clip_03: no audio track  |  silent
+[PASS] clip_03: 2.39:1 letterbox bars are black  |  top/bottom 138 px
+[PASS] clip_03: picture is moving (motion area >= 0.5%)  |  motion area 16.96%, mean |d| 7.86
+[PASS] clip_03: no dead pair of frames (static shot)  |  min mean |d| 4.27
+[PASS] clip_03: cold palette (blue >= red on 97.7% of pixels)  |  {'mean_rgb': [24.6, 32.3, 48.4], 'bright_red': 0.0, 'mean_saturation': 23.9, 'cold_share': 0.977}
+[PASS] clip_03: no bright reds / saturated cartoon colour  |  bright_red 0.000%, saturation 23.9
+[PASS] clip_03: signature wax_bending_cross  |  cue=True, motion in cross region 42.96%
+[PASS] clip_03: signature gravestones_on_crutches  |  cue=True, motion in stone region 16.75%
+[PASS] clip_03: signature glowing_eyes_in_mist (lit + alive)  |  cue=True, amber px mean 484 max 824 std 260
+[PASS] clip_03: no on-screen text in spec  |  None
+[PASS] clip_03: watermark disabled
+[PASS] clip_03: no flat overlay band (watermark / lower third)  |  min picture std 34.7
+[PASS] clip_04: >= 2 active cues  |  7 active of 7
+[PASS] clip_04: every cue type implemented by the renderer  |  unknown=[]
+[PASS] clip_04: duration 6-8 s  |  8.000s (spec 8.0s)
+[PASS] clip_04: spec duration matches renderer
+[PASS] clip_04: 1920x1080  |  1920x1080
+[PASS] clip_04: 24 fps  |  24.0
+[PASS] clip_04: h264 / yuv420p  |  h264 yuv420p
+[PASS] clip_04: no audio track  |  silent
+[PASS] clip_04: 2.39:1 letterbox bars are black  |  top/bottom 138 px
+[PASS] clip_04: picture is moving (motion area >= 0.5%)  |  motion area 15.21%, mean |d| 7.26
+[PASS] clip_04: no dead pair of frames (static shot)  |  min mean |d| 3.43
+[PASS] clip_04: cold palette (blue >= red on 97.8% of pixels)  |  {'mean_rgb': [24.1, 32.1, 48.7], 'bright_red': 0.0, 'mean_saturation': 24.6, 'cold_share': 0.978}
+[PASS] clip_04: no bright reds / saturated cartoon colour  |  bright_red 0.000%, saturation 24.6
+[PASS] clip_04: signature wax_bending_cross  |  cue=True, motion in cross region 41.86%
+[PASS] clip_04: signature gravestones_on_crutches  |  cue=True, motion in stone region 13.59%
+[PASS] clip_04: signature glowing_eyes_in_mist (lit + alive)  |  cue=True, amber px mean 269 max 546 std 148
+[PASS] clip_04: no on-screen text in spec  |  None
+[PASS] clip_04: watermark disabled
+[PASS] clip_04: no flat overlay band (watermark / lower third)  |  min picture std 34.4
+[PASS] clip_05: >= 2 active cues  |  7 active of 7
+[PASS] clip_05: every cue type implemented by the renderer  |  unknown=[]
+[PASS] clip_05: duration 6-8 s  |  8.000s (spec 8.0s)
+[PASS] clip_05: spec duration matches renderer
+[PASS] clip_05: 1920x1080  |  1920x1080
+[PASS] clip_05: 24 fps  |  24.0
+[PASS] clip_05: h264 / yuv420p  |  h264 yuv420p
+[PASS] clip_05: no audio track  |  silent
+[PASS] clip_05: 2.39:1 letterbox bars are black  |  top/bottom 138 px
+[PASS] clip_05: picture is moving (motion area >= 0.5%)  |  motion area 10.36%, mean |d| 5.19
+[PASS] clip_05: no dead pair of frames (static shot)  |  min mean |d| 2.44
+[PASS] clip_05: cold palette (blue >= red on 97.4% of pixels)  |  {'mean_rgb': [24.4, 32.9, 49.7], 'bright_red': 0.0, 'mean_saturation': 25.3, 'cold_share': 0.974}
+[PASS] clip_05: no bright reds / saturated cartoon colour  |  bright_red 0.000%, saturation 25.3
+[PASS] clip_05: signature wax_bending_cross  |  cue=True, motion in cross region 26.72%
+[PASS] clip_05: signature gravestones_on_crutches  |  cue=True, motion in stone region 12.03%
+[PASS] clip_05: signature glowing_eyes_in_mist (lit + alive)  |  cue=True, amber px mean 224 max 290 std 46
+[PASS] clip_05: no on-screen text in spec  |  None
+[PASS] clip_05: watermark disabled
+[PASS] clip_05: no flat overlay band (watermark / lower third)  |  min picture std 35.1
+[PASS] clip_06: >= 2 active cues  |  9 active of 9
+[PASS] clip_06: every cue type implemented by the renderer  |  unknown=[]
+[PASS] clip_06: duration 6-8 s  |  8.000s (spec 8.0s)
+[PASS] clip_06: spec duration matches renderer
+[PASS] clip_06: 1920x1080  |  1920x1080
+[PASS] clip_06: 24 fps  |  24.0
+[PASS] clip_06: h264 / yuv420p  |  h264 yuv420p
+[PASS] clip_06: no audio track  |  silent
+[PASS] clip_06: 2.39:1 letterbox bars are black  |  top/bottom 138 px
+[PASS] clip_06: picture is moving (motion area >= 0.5%)  |  motion area 10.36%, mean |d| 4.90
+[PASS] clip_06: no dead pair of frames (static shot)  |  min mean |d| 1.63
+[PASS] clip_06: cold palette (blue >= red on 98.1% of pixels)  |  {'mean_rgb': [11.6, 15.5, 24.4], 'bright_red': 0.0, 'mean_saturation': 13.1, 'cold_share': 0.981}
+[PASS] clip_06: no bright reds / saturated cartoon colour  |  bright_red 0.000%, saturation 13.1
+[PASS] clip_06: signature wax_bending_cross  |  cue=True, motion in cross region 22.89%
+[PASS] clip_06: signature gravestones_on_crutches  |  cue=True, motion in stone region 13.11%
+[PASS] clip_06: signature glowing_eyes_in_mist (lit + alive)  |  cue=True, amber px mean 118 max 335 std 125
+[PASS] clip_06: no on-screen text in spec  |  None
+[PASS] clip_06: watermark disabled
+[PASS] clip_06: no flat overlay band (watermark / lower third)  |  min picture std 14.1
+[PASS] scene: 6-9 clips  |  6 clips
+[PASS] scene: total 45-60 s  |  48.00s
+[PASS] assets: reuse manifest written (hashes recorded for scene 05)  |  12 PNG layers hashed
+[PASS] determinism: same timestamp twice is pixel-identical
+[PASS] scene mp4: duration 45-60 s  |  48.0s
+[PASS] scene mp4: 1920x1080 24fps h264
+[PASS] scene mp4: no audio track
+[PASS] scene mp4: picture is alive end to end  |  motion area 25.91%
+[PASS] scene mp4: no colour jump between clips  |  max mean RGB step 17.9
+
+RESULT: 123/123 checks passed, 0 failed
+
+per-clip numbers:
+  clip_01: 8.00s, 8 cues, motion 13.41%, mean RGB [23.0, 30.8, 47.3], cold 0.98, amber_px 228
+  clip_02: 8.00s, 7 cues, motion 10.33%, mean RGB [23.6, 31.9, 48.8], cold 0.977, amber_px 246
+  clip_03: 8.00s, 9 cues, motion 16.96%, mean RGB [24.6, 32.3, 48.4], cold 0.977, amber_px 484
+  clip_04: 8.00s, 7 cues, motion 15.21%, mean RGB [24.1, 32.1, 48.7], cold 0.978, amber_px 269
+  clip_05: 8.00s, 7 cues, motion 10.36%, mean RGB [24.4, 32.9, 49.7], cold 0.974, amber_px 224
+  clip_06: 8.00s, 9 cues, motion 10.36%, mean RGB [11.6, 15.5, 24.4], cold 0.981, amber_px 118

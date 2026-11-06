@@ -1,0 +1,148 @@
+{
+  "scene": "S4",
+  "title_scene": "THE GATHERING",
+  "duration_s": 8.0,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "picture": [
+    1920,
+    804
+  ],
+  "aspect": "2.39:1 letterboxed inside 1920x1080",
+  "audio": null,
+  "text": null,
+  "watermark": false,
+  "palette": {
+    "deep_cobalt": "#101f3c",
+    "night_blue": "#1b2c50",
+    "silver": "#c9d6e8",
+    "moon_white": "#e9eef6",
+    "indigo_mist": "#3a3474",
+    "stone_grey": "#6c7a8c",
+    "amber_eye": "#d99a3f"
+  },
+  "surreal_signatures": [
+    "wax_bending_cross",
+    "gravestones_on_crutches",
+    "glowing_eyes_in_mist"
+  ],
+  "clip": "clip_04",
+  "seed": 404,
+  "note": "The pan left continues along the tilted gravestone rows; the crutches creak, the mist crosses the frame the other way, new eyes appear deeper in.",
+  "cues": [
+    {
+      "type": "camera_pan",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 130,
+        "ease": "sine_in_out"
+      },
+      "note": "pan left along the rows"
+    },
+    {
+      "type": "camera_push",
+      "element": "camera",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "from": 1.06,
+        "to": 1.16,
+        "ease": "sine_in_out",
+        "anchor": [
+          430,
+          330
+        ]
+      },
+      "note": "eases into the rows of stones instead of the cross"
+    },
+    {
+      "type": "stone_sway",
+      "element": "gravestones",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "value": 3.2,
+        "hz": 0.07
+      },
+      "note": "the leaning rows sway further"
+    },
+    {
+      "type": "cross_wax",
+      "element": "cross",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "sag_from": 0.84,
+        "sag_to": 0.9,
+        "arm_from": 0.78,
+        "arm_to": 0.84
+      },
+      "note": "the wax keeps going at the edge of frame"
+    },
+    {
+      "type": "mist",
+      "element": "mist_back",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "back",
+        "dx": 90,
+        "dy": 10,
+        "alpha_from": 0.85,
+        "alpha_to": 1.0
+      },
+      "note": "back mist pushes right"
+    },
+    {
+      "type": "mist",
+      "element": "mist_front",
+      "t": [
+        0,
+        8
+      ],
+      "params": {
+        "layer": "front",
+        "dx": -120,
+        "dy": -12,
+        "rise": -14,
+        "alpha_from": 1.0,
+        "alpha_to": 0.95
+      },
+      "note": "front mist races the other way"
+    },
+    {
+      "type": "eyes_ignite",
+      "element": "eyes",
+      "t": [
+        1.0,
+        8
+      ],
+      "params": {
+        "clusters": [
+          4,
+          5,
+          6,
+          9
+        ],
+        "stagger": 0.7,
+        "glow": 1.05
+      },
+      "note": "four more clusters open deeper in the mist"
+    }
+  ]
+}
